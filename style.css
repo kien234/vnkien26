@@ -1,0 +1,405 @@
+/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #F0F0F0;
+    font-size:  12px;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    /*font-size: 1.5em;*/
+    color: #fff;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    /*font-size: 1.6em;*/
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 980px;
+    background-color: #fff;
+    margin: 0px auto 0px auto;
+    /* border: 1px solid #fff;*/
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    
+   /* background: #4b6c9e;*/
+    width: 100%;
+}
+
+.header h1
+{
+    
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    line-height: 2em;
+    font-size: 2em;
+    height: 149px;
+    width: 980px;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 184px;
+    min-height: 180px;
+}
+
+.footer
+{
+    background: #903938;
+    color:#fff;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+    
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#CE7A58;
+    width:100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #903938;
+    border: 1px #18815B solid;
+    color: #fff;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #BF4E38;
+    color: #C1C8CF;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #008D4C;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 0px 0px;
+    padding: 0em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 4px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: 980px;
+    background-image: url('../Images/banner_tp.png');
+    background-repeat: no-repeat;
+    height:145px;
+    padding-bottom:1px;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+.member
+{
+    background-image: url('../Images/user_member.jpg') no-repeat;
+    }
+ 
+div#menu {margin:0; padding:0;width:184px; background:url(menu_1.gif) top no-repeat; padding-top:44px;}
+
+div#menubody {margin:0; background:url(menu_2.gif) repeat-y; padding-left:7px;}
+
+div#menubottom {margin:0; padding:0;height:26px; background:url(menu_4.gif) bottom no-repeat;}
+
+ul#menulist {margin:0; padding:0;width:170px; list-style-type:none;}
+
+ul#menulist li {margin:0; padding:0;height:27px; background:url(menu_3.gif) bottom repeat-x;}
+
+ul#menulist a {margin:0; width:184px; height:20px; border-left:#75c5de 3px solid;  font-size:12px; font-family:Arial, Helvetica, Verdana, sans-serif; color:#ffffff; text-decoration:none; padding:5px 0 0 5px; display:block !important; display:inline-block;}
+
+ul#menulist a:hover {margin:0; background:url(menu_5.jpg) left repeat-y;}
+.xinchao
+    {
+        font-size:13px;
+        color:White;
+ 
+    }
+    
+     .bt_thuchien {      
+            background: #BF4E38;
+            border: solid 1px #003399;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+            height: 32px;  
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 10px;
+            margin-left: 45px;
+            -moz-border-radius: 7px;
+            -webkit-border-radius: 7px;
+    }
+    .bt_thuchien:hover
+    {
+            background: #1F3549;
+            border: solid 1px #003399;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+            height: 32px;  
+            cursor: pointer;
+
+}
+
+ .bt_dangky
+      {      
+            background: #BF4E38;
+            border: solid 1px #008D4C;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+            height: 32px;  
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 10px;
+            margin-left: 45px;
+            -moz-border-radius: 7px;
+            -webkit-border-radius: 7px;
+    }
+    .bt_dangky:hover
+    {
+            background: #903938;
+            border: solid 1px #003399;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+            height: 32px;  
+            cursor: pointer;
+}
+ /* menu dọc*/
+.vertical-menu {
+  width: 190px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+  background-color: #CE7A58; /* Grey background color */
+  border-bottom: 1px solid #F0F0F0;
+  color: #fff; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
